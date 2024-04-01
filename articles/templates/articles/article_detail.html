@@ -4,9 +4,13 @@
 <div class="article-detail">
     <div class="article">
         <h2>{{ article.title }}</h2>
-        <img src="{{ article.thumb.url }}" />
-        <p>{{ article.body }}</p>
-        <p>{{ article.date }}</p>
+        <img src="{{ article.thumb.url }}" class="article-image" alt="{{ article.title }}" />
+        <div class="article-body">
+            <p>{{ article.body }}</p>
+        </div>
+        <div class="article-footer">
+            <p class="article-date">{{ article.date }}</p>
+        </div>
     </div>
 </div>
 {% endblock %}

@@ -1,4 +1,4 @@
-/* Resetting default margin and padding */
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -7,55 +7,40 @@
 
 /* Body styles */
 body {
-    font-family: 'Ubuntu', sans-serif;
     background-color: #0f121f;
-    color: #fff;
-    background-image: url('/static/stars.png');
+    background-image: url(/static/stars.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 60px; /* Adjust based on your navbar height */
-}
-
-/* Navbar styles */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(15, 18, 31, 0.8); /* Semi-transparent navbar */
-    padding: 15px 20px;
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
+    background-size: cover; /* Ensures the background image covers the entire screen */
     color: #fff;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar-nav {
-    list-style: none;
+/* Headings styles */
+h1, h2, h3, h4, h5 {
+    font-weight: bold; /* Making headings bold for better readability */
+    margin: 10px 0; /* Adding some margin around headings */
 }
 
-.nav-item {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.nav-link {
+/* Links styles */
+a, a:hover, a:visited {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #ccc; /* Lighten link color on hover */
+}
+
+/* Container styles */
+.wrapper {
+    max-width: 1200px; /* Limiting maximum width of content */
+    margin: 0 auto; /* Centering content horizontally */
+    padding: 20px; /* Adding padding around content */
 }
 
 /* Article styles */
-.article-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .article {
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
     padding: 20px;
@@ -64,32 +49,92 @@ body {
 }
 
 .article h2 {
-    color: #fff;
+    color: #131212; /* Setting heading color to white */
 }
 
 .article p {
-    color: #ddd;
+    color: #181616; /* Setting paragraph text color to a light gray */
 }
 
-/* Footer styles */
-footer {
-    background-color: rgba(15, 18, 31, 0.8);
-    color: #fff;
-    text-align: center;
+
+/* Styles for article detail */
+.article-detail {
     padding: 20px;
-    position: fixed;
-    bottom: 0;
+}
+
+.article {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.article-body p {
+    color: #666;
+}
+
+.article-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.article-date {
+    color: #999;
+    font-size: 14px;
+}
+
+
+.create-article {
+    padding: 20px;
+}
+
+.create-article h2 {
+    margin-bottom: 20px;
+}
+
+.site-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
     width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Links styles */
-a, a:hover, a:visited {
+.btn-primary {
+    background-color: #007bff;
     color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-a:hover {
-    color: #ccc;
+.btn-primary:hover {
+    background-color: #0056b3;
 }
-
